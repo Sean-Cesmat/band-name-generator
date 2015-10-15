@@ -37,9 +37,7 @@ $(function() {
    $('#submitWords').on('submit', function(e) {
       e.preventDefault();
       
-      $('#adjectiveRes').empty();
-      $('#verbRes').empty();
-      $('#nounRes').empty();
+    
       $(':input').removeAttr('placeholder');
       var adjective = $('input[name=adjective]').val();
       var verb = $('input[name=verb]').val();
@@ -48,9 +46,9 @@ $(function() {
       var verbPost;
       var nounPost;
       
-       $("#adjectiveRes").hide().fadeIn(2000).delay(3000).fadeOut(2000);
-       $("#nounRes").hide().fadeIn(2000).delay(3000).fadeOut(2000);
-       $("#verbRes").hide().fadeIn(2000).delay(3000).fadeOut(2000);
+       $("#adjectiveRes").stop(true, true).hide().fadeIn(2000).delay(3000).fadeOut(2000);
+       $("#nounRes").stop(true, true).hide().fadeIn(2000).delay(3000).fadeOut(2000);
+       $("#verbRes").stop(true, true).hide().fadeIn(2000).delay(3000).fadeOut(2000);
       
       if (adjective) {
           adjPost = {word: adjective};
@@ -78,6 +76,9 @@ $(function() {
           });
           
       }
+         $('#adjectiveRes').empty();
+      $('#verbRes').empty();
+      $('#nounRes').empty();
        
        $('input[name=adjective]').attr('placeholder', "adjective");
        $('input[name=verb]').attr('placeholder', "verb");

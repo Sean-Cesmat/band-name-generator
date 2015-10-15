@@ -44,6 +44,7 @@ body p {
 
 .print-band-name:first-child {
     margin-bottom: -5px;
+    font-size: 1.4rem;
 }
 .print-band-name {
     text-align: center;
@@ -51,6 +52,7 @@ body p {
 
 .print-band-name span {
     margin: 0px .5rem;
+
 }
 
 /*
@@ -118,7 +120,7 @@ input[type=text] {
 input[type=submit] {
     
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     background-color: #E74C3C;
     border: none;
     padding: 9px 30px;
@@ -158,7 +160,7 @@ input[type=submit] {
 }
 
 #adjective, #verb, #noun {
-    font-size: 4remx;
+    font-size: 3.2rem;
     text-transform: uppercase;
 }
 
@@ -180,5 +182,9 @@ body .thanksText {
     #quote {font-size: 1.3rem;  padding: 10px 22px; }
     .row.gen-top .small-4 {
         font-size: .5rem;
+    }
+    
+    #adjective, #verb, #noun {
+        font-size: 1.9rem;
     }
 }
