@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Band Name Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/foundation.min.css" />
+    <script src="js/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <div class="row">
+        <header>
+            <div class="row">
+                <h2>Sean's Band Name Generator</h2>
+            </div>
+            <div class="row gen-top">
+                <from>
+                    <div class="medium-4 column flex-center">
+                     <label for="includeAdj">Include Adjectives</label>
+                        <input id="includeAdj" name="includeAdj" type="checkbox" checked />
+                    </div>
+                    <div class="medium-4 column flex-center">
+                        <label for="includeNoun">Include Nouns</label>
+                        <input id="includeNoun" name="includeNoun" type="checkbox" checked />
+                    </div>
+                    <div class="medium-4 column flex-center">
+                        <label for="includeVerb">Include Verb</label>
+                        <input id="includeVerb" name="includeVerb" type="checkbox" checked />
+                    </div>
+        </header>
+                <div class="medium-12 column flex-center">
+                 <button id="quote" type="submit">Get A Random Band Name!</button>
+                </div>
+            </from>
+        </div>
+        <div class="row">
+            <p class="print-band-name">
+                Your Band Name Is:
+            </p>
+            <p class="print-band-name">
+                <span id="adjective"></span>
+                <span id="verb"></span>
+                <span id="noun"></span>
+            </p>
+        </div>
+        <div class="row addWordsBottom">
+            <div class="medium-12 column">
+                <h3>You Can Add Your Own Words!</h3>
+                <h5>Add an adjective, verb and/or noun!</h5>
+            </div>
+            
+            <form id="submitWords">
+                              
+                <div class="row">
+                    <div class="medium-4 column flex-center">
+                        <input type="text" name="adjective" placeholder="adjective">
+                    </div>
+                    <div class="medium-4 column flex-center">
+                        <input type="text" name="verb" placeholder="verb">
+                    </div>
+                    <div class="medium-4 column flex-center">
+                        <input type="text" name="noun" placeholder="noun">
+                    </div>
+                </div>
+                
+                <div class="medium-12 column flex-center">
+                    <input type="submit" value="submit word">
+                </div>
+            </form>
+            <div class="row thanksText">
+                <p id="adjectiveRes"></p>
+                <p id="verbRes"></p>
+                <p id="nounRes"></p>
+            </div>
+        </div>
+        
+    </div>
+
+    
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+html body {
+  font-family: helvetica, sans-serif;
+  background: #00405d;
+  color: #fff;
+}
+
+body h2{
+    color: #fff;
+    text-align: center;
+}
+
+body .row .row{
+    margin: 0 2rem;
+}
+
+body  .row.gen-top {
+    max-width: 640px;
+    margin: -5px auto 0px;
+    padding-bottom: 14px;
+}
+
+.row.gen-top .medium-12 {
+    margin-top: 10px;
+}
+
+body p {
+    margin-bottom: 0px;
+}
+
+.flex-center {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.print-band-name:first-child {
+    margin-bottom: -5px;
+}
+.print-band-name {
+    text-align: center;
+}
+
+.print-band-name span {
+    margin: 0px .5rem;
+}
+
+/*
+.flex-container {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    }
+    
+.container {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+}
+*/
+
+header {
+    background: #012B3E;
+}
+
+#addWords {
+    width: 95%;
+    margin: 0 auto;
+    display: table;
+}
+
+#submitWords .row {
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+#submitWords .medium-4 {
+    margin-bottom: .8rem;
+}
+
+input[type=text] {
+    border: none;
+    border-radius: 2px;
+    font-size: 1.2rem;
+    margin: 0px auto -5px;
+    display: table;
+}
+
+input[type=submit] {
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    background-color: #E74C3C;
+    border: none;
+    padding: 9px;
+    border-radius: 4px;
+    margin-top: 10px;
+    max-width: 286px;
+}
+
+.addWordsBottom {
+    padding: 2rem 0rem;
+    background-color: rgba(255,255,255,.2);
+    margin-top: 1.5rem !important;
+}
+
+.addWordsBottom h3 {
+    text-align: center;
+    margin-bottom: -7px;
+    color: #fff;
+    margin-top: 0px;
+}
+
+.addWordsBottom h5 {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 15px;
+    color: #BDBDBD;
+}
+
+#quote {
+    font-size: 20px;
+    background: #e74c3c;
+    padding: 13px 37px;
+    border-radius: 7px;
+    border: none;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+#adjective, #verb, #noun {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+body .thanksText {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#adjectiveRes {
+    margin-top: 60px;;
+}
