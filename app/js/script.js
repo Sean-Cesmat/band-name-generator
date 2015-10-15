@@ -48,6 +48,10 @@ $(function() {
       var verbPost;
       var nounPost;
       
+       $("#adjectiveRes").hide().fadeIn(2000).delay(3000).fadeOut(2000);
+       $("#nounRes").hide().fadeIn(2000).delay(3000).fadeOut(2000);
+       $("#verbRes").hide().fadeIn(2000).delay(3000).fadeOut(2000);
+      
       if (adjective) {
           adjPost = {word: adjective};
           $.post('adjective', adjPost, function(response) {
