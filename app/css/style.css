@@ -98,7 +98,7 @@ input[type=submit], #colors {
 }
 
 #colors {
-  margin: 10px auto 0;
+  margin: 10px auto 50px;
   display: table;
   font-size: .8rem !important;
   background: rgba(0,0,0,.3);
