@@ -4,9 +4,11 @@ $(function() {
 
   $('#quote').click(function() {
     //$('#adjective').text('Hello Ya\'ll');
-    var checkedAdj = $('#includeAdj').checked;
-    var checkedNoun = $('#includeNoun').checked;
-    var checkedVerb = $('#includeVerb').checked;
+    var checkedAdj = $('#includeAdj').is(':checked');
+    var checkedNoun = $('#includeNoun').is(':checked');
+    var checkedVerb = $('#includeVerb').is(':checked');
+
+    console.log($('#includeAdj').checked);
 
     if (checkedAdj === true) {
       $.get('/adjective', function(response) {
