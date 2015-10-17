@@ -55,43 +55,8 @@ body p {
 
 }
 
-/*
-.flex-container {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-content: center;
-    -ms-flex-line-pack: center;
-    align-content: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    }
-    
-.container {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    -webkit-align-self: auto;
-    -ms-flex-item-align: auto;
-    align-self: auto;
-}
-*/
-
 header {
-    background: #012B3E;
+    background: rgba(0,0,0,.35);
 }
 
 #addWords {
@@ -115,9 +80,11 @@ input[type=text] {
     font-size: 1.2rem;
     margin: 0px auto -5px;
     display: table;
+    outline: #fff;
+    padding: 3px;
 }
 
-input[type=submit] {
+input[type=submit], #colors {
     
     color: #fff;
     font-size: 1.2rem;
@@ -127,6 +94,14 @@ input[type=submit] {
     border-radius: 4px;
     margin-top: 10px;
     max-width: 286px;
+    outline: none;
+}
+
+#colors {
+  margin: 10px auto 0;
+  display: table;
+  font-size: .8rem !important;
+  background: rgba(0,0,0,.3);
 }
 
 .addWordsBottom {
@@ -146,7 +121,7 @@ input[type=submit] {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 15px;
-    color: #BDBDBD;
+    color: #000;
 }
 
 #quote {
@@ -157,6 +132,7 @@ input[type=submit] {
     border: none;
     color: #fff;
     margin-top: 2rem;
+    outline: none;
 }
 
 #adjective, #verb, #noun {

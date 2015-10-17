@@ -9,6 +9,9 @@ var Nouns = require('./lib/nouns.js');
 var Verbs = require('./lib/verbs.js');
 var getRandomWord = require('./lib/getRandomWord.js');
 var postWord = require('./lib/postWord.js');
+var getRandomColor = require('./lib/getRandomColor.js');
+var buttonColors = require('./lib/buttonColors.js');
+var bgColors = require('./lib/bgColors.js');
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({
@@ -61,4 +64,12 @@ app.post('/verb', function(req, res) {
 app.post('/noun', function(req, res) {
   var word = postWord(req.body.word, noun);
   res.json(word);
+});
+
+app.get('/button-color', function(req, res) {
+  res.json(getRandomColor(buttonColors));
+});
+
+app.get('/bg-color', function(req, res) {
+  res.json(getRandomColor(bgColors));
 });

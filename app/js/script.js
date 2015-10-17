@@ -7,8 +7,10 @@ $(function() {
     var checkedAdj = $('#includeAdj').is(':checked');
     var checkedNoun = $('#includeNoun').is(':checked');
     var checkedVerb = $('#includeVerb').is(':checked');
-
-    console.log($('#includeAdj').checked);
+    
+    $('#adjective').stop(true, true).hide().fadeIn(1300);
+    $('#verb').stop(true, true).hide().fadeIn(1300);
+    $('#noun').stop(true, true).hide().fadeIn(1300);
 
     if (checkedAdj === true) {
       $.get('/adjective', function(response) {
@@ -94,6 +96,17 @@ $(function() {
     $('input[name=noun]').attr('placeholder', 'noun');
     $('input[type=text]').val('');
   });
-
+  
+  $('#colors').click(function() {
+    $.get('/bg-color', function(response) {
+      var color = response;
+      $('body').css('background', color);
+    });
+    $.get('/button-color', function(response) {
+      var color = response;
+      $('input[type=submit], #quote').css('background', color);
+    });
+  });
+  
   //console.log(getRandomWord(adjective));
 });
